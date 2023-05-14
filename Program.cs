@@ -77,8 +77,8 @@ namespace Chess_meme
                 array[i] = temp;
             }
 
-            allowed_moveX = rearr(allowed_moveX, array);
-            allowed_moveY = rearr(allowed_moveY, array);
+            allowed_moveX = rearr(allowed_moveX, array); // here we randomize first pair of moves to check
+            allowed_moveY = rearr(allowed_moveY, array); // if not found then next pair of x,y goes
 
             chess_array[startX, startY] = 0;
 
