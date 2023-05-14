@@ -13,8 +13,8 @@ namespace Chess_meme
     {
         static string path_file = "";
 
-        public static int[,] array_generator(int number, int identer)
-        {
+        public static int[,] array_generator(int number, int identer) 
+        {                                                              
             int[,] chess_array = new int[number, number];
 
             for (int i = 0; i < number; ++i)
@@ -29,6 +29,16 @@ namespace Chess_meme
 
         static int[] rearr(int[] arr, int[] array)
         {
+        /*
+             * function --rearr()-- 
+             * return type --int[]--
+             * 
+             * made for shuffling all numbers from two arrays
+             * 
+             * <int[]> arr -- a line of pair that is to be shuffled
+             * <int[]> array -- a key line of numbers on whick reshuffling is to be commenced
+             * 
+             */
             for (int i = 0; i < array.Length; ++i)
             {
                 int num = 9 - array[i];
@@ -84,7 +94,7 @@ namespace Chess_meme
 
             if (!decide(startX, startY, 1, chess_array, allowed_moveX, allowed_moveY, number, identer))
             {
-                Console.WriteLine("No solution possible");
+                Console.WriteLine("No path possible at config");
             }
             else {
                 result_out(chess_array, number);
