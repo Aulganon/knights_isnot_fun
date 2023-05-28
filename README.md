@@ -1,6 +1,8 @@
 # knights_isnot_fun
 
+<p> School project for studing algorithms for solving  NP-complete task of knight's tour. </p>
 
+<p>Note the fact that knight's tour is an NP complete task so you may be lucky to find solution quick or you may have to wait long enough awaiting for solution. </p>
 Read file Program.cs for reading full code class CleverSol went by unreally impossible reason here.
 
 
